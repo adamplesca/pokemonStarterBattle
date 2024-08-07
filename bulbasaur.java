@@ -1,3 +1,4 @@
+
 public class bulbasaur {
     
     //pokemon stats
@@ -9,5 +10,20 @@ public class bulbasaur {
     int specDef = 13;
     int speed = 10;
 
-    //moves
+    //moves + vars for stats
+
+    int phyDamage, specDamage, statLowering;
+    int accuracy;
+
+    public int tackle(){
+        
+        return phyDamage;
+    }
+    public int vineWhip(){
+        return phyDamage;
+    }
+    public int growl(){
+        return statLowering;
+    }
+
 }

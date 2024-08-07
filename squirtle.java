@@ -9,5 +9,19 @@ public class squirtle {
         int specDef = 13;
         int speed = 10;
 
-        //moves
+        //moves + vars for stats
+
+        int phyDamage, specDamage, statLowering;
+        int accuracy;
+
+        public int tackle(){
+                return phyDamage;
+        }
+        public int waterGun(){
+                return specDamage;
+        }
+        public int tailWhip(){
+                return statLowering;
+        }
+
 }
