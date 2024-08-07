@@ -1,0 +1,19 @@
+MAIN APP
+- explains game
+- player chooses starter
+-  game starts
+- game ends after oppnent or player wins
+- Play again option
+- Track W/L 
+
+
+ENEMYBOT
+- Pick stronger typing to player (grass < water etc)
+- Randomly choose moveset turn based, gives me chance of picking damaging moves (50%)
+
+POKEMON CLASSES
+-  correct moves, dealing proper damage or stat thing
+
+
+BATTLE SIMMULATOR
+-  make it turn based (forloops)
