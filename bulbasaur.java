@@ -1,3 +1,4 @@
+import java.util.Random;
 
 public class bulbasaur {
     
@@ -11,19 +12,30 @@ public class bulbasaur {
     int speed = 10;
 
     //moves + vars for stats
-
-    int phyDamage, specDamage, statLowering;
-    int accuracy;
+    Random ran = new Random();
+    int damage, statLowering;
+    
+    //int accuracy;
 
     public int tackle(){
-        
-        return phyDamage;
+        int critChance = ran.nextInt(10);
+        if(critChance == 10){
+            damage = 8;
+        }else{
+            damage = 4;
+        }
+        return damage;
     }
     public int vineWhip(){
-        return phyDamage;
+        int critChance = ran.nextInt(10);
+        if(critChance == 10){
+            damage = 12;
+        }else{
+            damage = 6;
+        }
+        return damage;
     }
-    public int growl(){
+    /* public int growl(){
         return statLowering;
-    }
-
+    } */
 }
