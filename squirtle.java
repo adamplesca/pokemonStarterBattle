@@ -23,5 +23,4 @@ public class squirtle {
         public int tailWhip(){
                 return statLowering;
         }
-
 }
