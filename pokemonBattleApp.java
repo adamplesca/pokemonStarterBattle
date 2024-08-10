@@ -2,19 +2,42 @@ import javax.swing.JOptionPane;
 
 public class pokemonBattleApp{
     public static void main(String [] args){
+        
 
-        JOptionPane.showMessageDialog(null, "                                   Welcome to Pokemon Battle Sim" 
-                                                        + "\n" 
-                                                        + "You will be choosing a starter Pokemon in which you will fight your rival 'Blue'.");
+        mainLogic ML = new mainLogic();
 
-        JOptionPane.showMessageDialog(null, "                                   In case you don't know the rules, Here they are" 
-                                                        + "\n"
-                                                        + "Your objective is faint your rivals pokemon,"
-                                                        + "\n"
-                                                        + "You do this by dealing damage to them until they no longer have any HP ('HitPoints'),"
-                                                        + "\n"
-                                                        + "You deal damage through attacks that your pokemon of choice has,"
-                                                        + "\n"
-                                                        + "Goodluck");
+      /*   System.out.println(ML.returnHP());
+        System.out.println(ML.returnType()); */
+
+        String[] starterPokemon = {"Bulbasaur", "Charmander", "Squirtle"};
+        
+        int choice = JOptionPane.showOptionDialog(
+            null,                        
+            "Pick your starter!",           
+            "Choose your Pokémon",           
+            JOptionPane.DEFAULT_OPTION,      
+            JOptionPane.INFORMATION_MESSAGE, 
+            null,                         
+            starterPokemon,                         
+            starterPokemon[0]                   
+        );
+
+        //enemyTrainer rival = new enemyTrainer();
+        //rival.outcome(starterPokemon[choice]);
+
+        bulbasaur b = new bulbasaur();
+
+        for(String move : b.moveChoice()){
+            System.out.println(move);
+        }
+
+
     }
 }
+
+/* 
+
+joption choice for player to pick starter pokemon
+if statement checks player choice and creates pokemon object along with enemy trainer pokemon object 
+
+*/
