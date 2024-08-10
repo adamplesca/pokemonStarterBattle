@@ -26,6 +26,7 @@ public class bulbasaur {
         }
         return damage;
     }
+    
     public int vineWhip(){
         int critChance = ran.nextInt(10);
         if(critChance == 10){
@@ -38,4 +39,28 @@ public class bulbasaur {
     /* public int growl(){
         return statLowering;
     } */
+
+    /* public int moveChoice(){
+        //String[] bulbMoves = new String[2];
+        int moveChance = ran.nextInt(10);
+        if(moveChance <= 7){
+            damage = tackle();
+        }else{
+            damage = vineWhip();
+        }
+        return damage;
+    } */
+
+    public String[] moveChoice(){
+        String[] bulbMoves = new String[2];
+        int moveChance = ran.nextInt(10);
+        if(moveChance <= 7){
+            bulbMoves[0] = Integer.toString(tackle());
+            bulbMoves[1] = "Tackle";
+        }else{
+            bulbMoves[0] = Integer.toString(vineWhip());
+            bulbMoves[1] = "Vinewhip";
+        }
+        return bulbMoves; 
+    } 
 }
