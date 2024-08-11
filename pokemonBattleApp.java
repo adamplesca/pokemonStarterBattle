@@ -13,8 +13,8 @@ public class pokemonBattleApp{
         
         int choice = JOptionPane.showOptionDialog(
             null,                        
-            "Pick your starter!",           
-            "Choose your Pokémon",           
+            "Pick your starter",           
+            "Choose your starter Pokémon",           
             JOptionPane.DEFAULT_OPTION,      
             JOptionPane.INFORMATION_MESSAGE, 
             null,                         
@@ -22,22 +22,17 @@ public class pokemonBattleApp{
             starterPokemon[0]                   
         );
 
-        //enemyTrainer rival = new enemyTrainer();
-        //rival.outcome(starterPokemon[choice]);
+        enemyTrainer rival = new enemyTrainer();
+        rival.outcome(starterPokemon[choice]);
 
-        bulbasaur b = new bulbasaur();
+        
+        /* bulbasaur b = new bulbasaur();
 
         for(String move : b.moveChoice()){
             System.out.println(move);
-        }
+        } */
 
 
     }
 }
 
-/* 
-
-joption choice for player to pick starter pokemon
-if statement checks player choice and creates pokemon object along with enemy trainer pokemon object 
-
-*/
