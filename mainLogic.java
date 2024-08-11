@@ -17,6 +17,17 @@ public class mainLogic {
     int squrTackle = s.tackle();
     int squrWaterGun = s.waterGun();
 
+    //pokemon hp value
+    int bulbHP = b.hp;
+    int charHP = c.hp;
+    int squrHP = s.hp;
+
+    
+    /* public int returnhp(){
+        return bulbHP - charEmber;
+    } */
+
+    
 
     public void pokemonBattleTurn(){
 

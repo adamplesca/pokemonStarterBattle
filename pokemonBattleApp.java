@@ -25,6 +25,7 @@ public class pokemonBattleApp{
             case "Rules" -> {
                 gameRules();
                 //add choice after if they want to play the game rather than closing then reopening to do so
+                //System.out.println(ML.returnhp());
             }
             default -> { 
                 exitGame(); 
