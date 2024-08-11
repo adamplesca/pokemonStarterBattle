@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class charmander {
 
         //pokemon stats
@@ -9,18 +11,45 @@ public class charmander {
         int specDef = 13;
         int speed = 10;
 
-        //moves + vars for stats
+        int damage;
+        //int statLowering, accuracy;
 
-        int phyDamage, specDamage, statLowering;
-        int accuracy;
+        Random ran = new Random();
 
+        //moveset
         public int scratch(){
-                return phyDamage;
+                int critChance = ran.nextInt(10);
+                if(critChance >= 9){
+                        damage = 6;
+                }else{
+                        damage = 4;
+                }
+                return damage;
         }
         public int ember(){
-                return specDamage;
+                int critChance = ran.nextInt(10);
+                if(critChance >= 9){
+                    damage = 9;
+                }else{
+                    damage = 6;
+                }
+                return damage;
         }
-        public int growl(){
+        /* public int growl(){
                 return statLowering;
+        } */
+       
+        //rival randomising moveset
+        public String[] rivalMoveChoiceChar(){
+                String[] charMoves = new String[2];    //add info about move somehow maybe
+                int moveChance = ran.nextInt(10);
+                if(moveChance <= 7){
+                        charMoves[0] = Integer.toString(scratch());
+                        charMoves[1] = "Scratch";
+                }else{
+                        charMoves[0] = Integer.toString(ember());
+                        charMoves[1] = "Ember";
+                }
+                return charMoves; 
         }
 }
