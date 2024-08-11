@@ -1,27 +1,38 @@
 public class mainLogic {
     
-    bulbasaur p1 = new bulbasaur();
-    charmander p2 = new charmander();
-    squirtle p3 = new squirtle();
+    //pokemon objects created
+    bulbasaur b = new bulbasaur();
+    charmander c = new charmander();
+    squirtle s = new squirtle();
 
     //bulbasaur attacks
-    int bulTackle = p1.tackle();
-    int bulVineWhip = p1.vineWhip();
+    int bulbTackle = b.tackle();
+    int bulbVineWhip = b.vineWhip();
 
-    
-    String name = "asdi " + "dsaoind";
-    
+    //charmander attacks
+    int charScratch = c.scratch();
+    int charEmber = c.ember();
 
-    public int returnHP(){
-        return p1.hp;
+    //squirtle attacks
+    int squrTackle = s.tackle();
+    int squrWaterGun = s.waterGun();
+
+
+    public void pokemonBattleTurn(){
+
+
+    }
+
+   /*  public int returnHP(){
+        return b.hp;
     }
 
     public String returnType(){
-        return p1.type;
+        return b.type;
     }
 
     public int attackDamage(){
-        return p2.hp - damage;
-    }
+        return c.hp - damage;
+    } */
 
 }
