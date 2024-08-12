@@ -1,5 +1,8 @@
 public class mainLogic {
     
+    //rival object
+    enemyTrainer rival = new enemyTrainer();
+
     //pokemon objects created
     bulbasaur b = new bulbasaur();
     charmander c = new charmander();
@@ -20,19 +23,16 @@ public class mainLogic {
     //pokemon hp value
     int bulbHP = b.hp;
     int charHP = c.hp;
-    int squrHP = s.hp;
+    int squrHP = s.hp;  
+
+
+    public void pokemonBattleTurn(){}
+
 
     
     /* public int returnhp(){
         return bulbHP - charEmber;
     } */
-
-    
-
-    public void pokemonBattleTurn(){
-
-
-    }
 
    /*  public int returnHP(){
         return b.hp;
