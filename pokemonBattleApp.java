@@ -23,7 +23,7 @@ public class pokemonBattleApp {
             }
             case "Rules" -> {
                 gameRules();
-                // add choice after if they want to play the game rather than closing then reopening to do so
+                // add choice if they want to play the game
             }
             default -> {
                 exitGame();
