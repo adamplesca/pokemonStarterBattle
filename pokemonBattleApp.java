@@ -5,6 +5,21 @@ public class pokemonBattleApp {
 
         mainLogic ML = new mainLogic();
 
+        Pokemon bulbasaur = new Pokemon(30, "Bulbasaur", "grass", "fire");
+        Pokemon squirtle = new Pokemon(30, "Squirtle", "water", "grass");
+        Pokemon charmander = new Pokemon(30, "Charmander", "fire", "water");
+
+        int test = bulbasaur.superEffectiveCalc(bulbasaur.tackle(), "normal", squirtle);
+
+
+
+        System.out.println("Bulbasaur used tackle and did " + test + " damage");
+        
+        System.out.println("Squirtles hp is " + squirtle.hp);
+        
+
+
+    
         String[] playerOptions = { "Play", "Rules", "Exit" };
 
         int nav = JOptionPane.showOptionDialog(
@@ -31,7 +46,6 @@ public class pokemonBattleApp {
         }
 
     }
-
     // start game function
     private static void startGame() {
 
@@ -76,10 +90,3 @@ public class pokemonBattleApp {
     }
 
 }
-
-// make option for player to pick a move to attack with within pokemonRound
-// function
-// make function so ai uses random pokemon move
-// track hp of both pokemon and when they reach zero notify user and make W/L
-// screen + counter + replay
-// make function that simmulates pokemon round
