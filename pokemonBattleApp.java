@@ -9,17 +9,13 @@ public class pokemonBattleApp {
         Pokemon squirtle = new Pokemon(30, "Squirtle", "water", "grass");
         Pokemon charmander = new Pokemon(30, "Charmander", "fire", "water");
 
-        int test = bulbasaur.superEffectiveCalc(bulbasaur.tackle(), "normal", squirtle);
-
-
+/*         int test = bulbasaur.superEffectiveCalc(bulbasaur.tackle(), "normal", squirtle);
 
         System.out.println("Bulbasaur used tackle and did " + test + " damage");
         
-        System.out.println("Squirtles hp is " + squirtle.hp);
+        System.out.println("Squirtles hp is " + squirtle.hp); */
         
 
-
-    
         String[] playerOptions = { "Play", "Rules", "Exit" };
 
         int nav = JOptionPane.showOptionDialog(
@@ -38,7 +34,12 @@ public class pokemonBattleApp {
             }
             case "Rules" -> {
                 gameRules();
-                // add choice if they want to play the game
+                int choice = JOptionPane.showConfirmDialog(null, "Would you like to play now?");
+                if (choice == JOptionPane.YES_OPTION) {
+                    startGame();
+                } else {
+                    exitGame();
+                }
             }
             default -> {
                 exitGame();
