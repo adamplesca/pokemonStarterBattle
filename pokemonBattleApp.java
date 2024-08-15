@@ -46,6 +46,7 @@ public class pokemonBattleApp {
         }
 
     }
+    
     // start game function
     private static void startGame() {
 
