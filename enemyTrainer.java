@@ -1,28 +1,18 @@
+import javax.swing.JOptionPane;
 
 public class enemyTrainer {
+    private Pokemon rivalPokemon;
 
-    private String pokemon, message;
-
-    public void outcome(String chosenPokemon) {
-        pokemon = chosenPokemon;
+    public enemyTrainer(Pokemon playerPokemon) {
+        switch (playerPokemon.name) {
+            case "Bulbasaur" -> rivalPokemon = new Pokemon(30, "Charmander", "fire", "water");
+            case "Charmander" -> rivalPokemon = new Pokemon(30, "Squirtle", "water", "grass");
+            case "Squirtle" -> rivalPokemon = new Pokemon(30, "Bulbasaur", "grass", "fire");
+        }
+        JOptionPane.showMessageDialog(null, "Your rival chose " + rivalPokemon.name + "!");
     }
 
-    // rival chooses pokemon
-    public String rivalPokemonChoice() {
-        switch (pokemon) {
-            case "Bulbasaur" -> {
-                message = "Your rival chose 'Charmander'!";
-            }
-            case "Charmander" -> {
-                message = "Your rival chose 'Squirtle'!";
-            }
-            case "Squirtle" -> {
-                message = "Your rival chose 'Bulbasaur'!";
-            }
-            default -> {
-                message = "Error, did not choose pokemon";
-            }
-        }
-        return message;
+    public Pokemon getRivalPokemon() {
+        return rivalPokemon;
     }
 }
