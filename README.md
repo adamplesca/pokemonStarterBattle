@@ -40,9 +40,9 @@ Now that you and your rival have chosen your Pokémon, it's time to battle. Each
 ### Pokémon Movesets:
 
 <div style="text-align: center;">
-  <img src="https://github.com/user-attachments/assets/91e7235d-99fb-484c-99ff-a186fe358dd6" alt="Charmander's Moveset" width="320" />
-  <img src="https://github.com/user-attachments/assets/bd9d8683-6ac7-40c3-a662-a4c24434dd22" alt="Squirtle's Moveset" width="320" />
-  <img src="https://github.com/user-attachments/assets/9ea976d4-2c5e-4154-ab8b-db508832557c" alt="Bulbasaur's Moveset" width="320" />
+  <img src="https://github.com/user-attachments/assets/91e7235d-99fb-484c-99ff-a186fe358dd6" alt="Charmander's Moveset" width="250" />
+  <img src="https://github.com/user-attachments/assets/bd9d8683-6ac7-40c3-a662-a4c24434dd22" alt="Squirtle's Moveset" width="250" />
+  <img src="https://github.com/user-attachments/assets/9ea976d4-2c5e-4154-ab8b-db508832557c" alt="Bulbasaur's Moveset" width="250" />
 </div>
 
 ---
