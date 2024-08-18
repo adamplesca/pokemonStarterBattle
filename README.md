@@ -1,12 +1,12 @@
 # Pokémon Starter Battle Game 🎮
 
-Welcome to the **Pokémon Starter Battle Game**! In this game, you'll choose your favorite starter Pokémon and battle against a rival. It's simple and fun & perfect for anyone who loves Pokémon!
+Welcome to the **Pokémon Starter Battle Game**! In this game, you'll choose your favorite starter Pokémon and battle against a rival. It's simple, fun, and perfect for anyone who loves Pokémon!
 
 ---
 
 <div style="text-align: center;">
   <img src="https://github.com/user-attachments/assets/b2579c1a-ee6c-4f56-b335-6062eac4d624" alt="java logo" width="150" />
-  <img src="https://github.com/user-attachments/assets/75606309-5d7c-4af7-9d97-14ba763522b0" alt="OG starter trio" width="600" />
+  <img src="https://github.com/user-attachments/assets/75606309-5d7c-4af7-9d97-14ba763522b0" alt="OG starter trio" width="550" />
 </div>
 
 ## How to Play
@@ -53,6 +53,23 @@ To win the battle, make your rival's Pokémon faint by reducing their HP to 0. U
 
 - **Critical Hits**: Sometimes your moves will land a critical hit, dealing extra damage!
 - **Type Effectiveness**: Use elemental moves (like Ember, Water Gun, or Vine Whip) to exploit your opponent's weaknesses.
+
+---
+
+## Replay System & Stat Tracking 📊
+
+After each battle, you now have the option to **replay** the game without losing your progress. Choose to either play again, review the rules, check your stats, or exit the game.
+
+### Stat Tracking:
+
+Your wins, losses, and total games played are all tracked, allowing you to monitor your progress over multiple battles. Here's what you can expect:
+
+- **Wins and Losses**: Keep track of how many battles you've won and lost.
+- **Win Percentage**: See how well you're performing with a calculated win percentage.
+
+![replay tracking](https://github.com/user-attachments/assets/4cf4524c-b04a-408d-a87e-0b5ba9ed5538)
+
+This system ensures that your stats remain consistent throughout your play sessions, offering a more immersive and competitive experience!
 
 ---
 
