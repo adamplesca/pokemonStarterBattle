@@ -1,6 +1,6 @@
 # Pokémon Starter Battle Game 🎮
 
-Welcome to the **Pokémon Starter Battle Game**! In this game, you'll choose your favorite starter Pokémon and battle against a rival. It's simple, fun, and perfect for anyone who loves Pokémon!
+Welcome to the **Pokémon Starter Battle Game**! In this game, you'll choose your favorite starter Pokémon and battle against your rival **Blue**. It's simple, fun, and perfect for anyone who loves Pokémon!
 
 ---
 
